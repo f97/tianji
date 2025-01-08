@@ -1,1 +1,1 @@
-release: rm -rf .git .github .devcontainer
+release: rm -rf .git .github .devcontainer docker packages
