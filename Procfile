@@ -1,1 +1,1 @@
-release: rm -rf .git .github .devcontainer docker packages
+release: rm -rf node_modules && pnpm install --production
