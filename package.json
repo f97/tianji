@@ -5,7 +5,7 @@
   "type": "module",
   "engines": {
     "node": "18.x"
-  }
+  },
   "scripts": {
     "dev": "concurrently --kill-others npm:dev:server npm:dev:web",
     "dev:web": "cd src/client && pnpm dev",
