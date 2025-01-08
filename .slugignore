@@ -1,0 +1,6 @@
+.git
+.github
+.devcontainer
+docker
+packages
+node_modules
