@@ -26,7 +26,7 @@
     "release": "release-it",
     "release:patch": "release-it -i patch",
     "release:packages": "pnpm -r --filter \"./packages/*\" publish --registry=https://registry.npmjs.com/",
-    "heroku-postbuild": "npm install --production"
+    "heroku-postbuild": "pnpm install --production"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "9.0.3",
