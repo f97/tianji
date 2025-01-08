@@ -7,7 +7,6 @@
     "node": "18.x"
   },
   "scripts": {
-    "heroku-postbuild": "npm install --production",
     "dev": "concurrently --kill-others npm:dev:server npm:dev:web",
     "dev:web": "cd src/client && pnpm dev",
     "dev:server": "cd src/server && pnpm dev",
@@ -26,7 +25,8 @@
     "check:type": "pnpm -r check:type",
     "release": "release-it",
     "release:patch": "release-it -i patch",
-    "release:packages": "pnpm -r --filter \"./packages/*\" publish --registry=https://registry.npmjs.com/"
+    "release:packages": "pnpm -r --filter \"./packages/*\" publish --registry=https://registry.npmjs.com/",
+    "heroku-postbuild": "npm install --production"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "9.0.3",
