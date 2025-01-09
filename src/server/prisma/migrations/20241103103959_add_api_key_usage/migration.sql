@@ -1,2 +1,0 @@
--- AlterTable
-ALTER TABLE "UserApiKey" ADD COLUMN     "usage" INTEGER NOT NULL DEFAULT 0;
